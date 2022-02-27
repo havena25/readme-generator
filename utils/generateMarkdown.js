@@ -11,10 +11,43 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+
 function generateMarkdown(data) {
   return `# ${data.title}
+  ## Badges
+  
 
-`;
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [How to Contribute](#how-to-contribute)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions?](#questions)
+  
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.install}
+
+  ## Usage
+  ${data.usage}
+
+  ## How to Contribute
+  [Github Guide on How to Contribute to Open Source](https://github.com/freeCodeCamp/how-to-contribute-to-open-source)
+  ${data.contributing}
+
+
+  ## License
+  
+
+  ## Questions?
+  ### Reach me here: 
+  https://github.com/${data.username}
+  ${data.email}`;
 }
+
 
 module.exports = generateMarkdown;
