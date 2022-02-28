@@ -71,11 +71,135 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license===licenseArray[0]){
+    return `[${licenseArray[0]}](https://opensource.org/licenses/AFL-3.0)`
+  } else if (license===licenseArray[1]){
+    return `[${licenseArray[1]}](https://opensource.org/licenses/Apache-2.0)`
+  } else if (license===licenseArray[2]){
+    return `[${licenseArray[2]}](https://opensource.org/licenses/Artistic-2.0)`
+  } else if (license===licenseArray[3]){
+    return `[${licenseArray[3]}](https://www.boost.org/LICENSE_1_0.txt)`
+  } else if (license===licenseArray[4]){
+    return `[${licenseArray[4]}](https://opensource.org/licenses/BSD-2-Clause)`
+  } else if (license===licenseArray[5]){
+    return `[${licenseArray[5]}](https://opensource.org/licenses/BSD-3-Clause)`
+  } else if (license===licenseArray[6]){
+    return `[${licenseArray[6]}](http://creativecommons.org/publicdomain/zero/1.0/)`
+  } else if (license===licenseArray[7]){
+    return `[${licenseArray[7]}](https://creativecommons.org/licenses/by/4.0/)`
+  } else if (license===licenseArray[8]){
+    return `[${licenseArray[8]}](https://creativecommons.org/licenses/by-sa/4.0/)`
+  } else if (license===licenseArray[9]){
+    return `[${licenseArray[9]}](http://www.wtfpl.net/about/)`
+  } else if (license===licenseArray[10]){
+    return `[${licenseArray[10]}](https://opensource.org/licenses/ECL-2.0)`
+  } else if (license===licenseArray[11]){
+    return `[${licenseArray[11]}](https://opensource.org/licenses/EPL-1.0)`
+  } else if (license===licenseArray[12]){
+    return `[${licenseArray[12]}](https://opensource.org/licenses/EPL-2.0)`
+  } else if (license===licenseArray[13]){
+    return `[${licenseArray[13]}](https://choosealicense.com/licenses/eupl-1.1/)`
+  } else if (license===licenseArray[14]){
+    return `[${licenseArray[14]}](https://www.gnu.org/licenses/agpl-3.0)`
+  } else if (license===licenseArray[15]){
+    return `[${licenseArray[15]}](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
+  } else if (license===licenseArray[16]){
+    return `[${licenseArray[16]}](https://www.gnu.org/licenses/gpl-3.0)`
+  } else if (license===licenseArray[17]){
+    return `[${licenseArray[17]}](https://www.gnu.org/licenses/lgpl-2.1)`
+  } else if (license===licenseArray[18]){
+    return `[${licenseArray[18]}](https://www.gnu.org/licenses/lgpl-3.0)`
+  } else if (license===licenseArray[19]){
+    return `[${licenseArray[19]}](https://opensource.org/licenses/ISC)`
+  } else if (license===licenseArray[20]){
+    return `[${licenseArray[20]}](https://spdx.org/licenses/LPPL-1.3c.html)`
+  } else if (license===licenseArray[21]){
+    return `[${licenseArray[21]}](https://opensource.org/licenses/MS-PL)`
+  } else if (license===licenseArray[22]){
+    return `[${licenseArray[22]}](https://opensource.org/licenses/MIT)`
+  } else if (license===licenseArray[23]){
+    return `[${licenseArray[23]}](https://opensource.org/licenses/MPL-2.0)`
+  } else if (license===licenseArray[24]){
+    return `[${licenseArray[24]}](https://opensource.org/licenses/OSL-3.0)`
+  } else if (license===licenseArray[25]){
+    return `[${licenseArray[25]}](https://opensource.org/licenses/OFL-1.1)`
+  } else if (license===licenseArray[26]){
+    return `[${licenseArray[26]}](https://opensource.org/licenses/NCSA)`
+  } else if (license===licenseArray[27]){
+    return `[${licenseArray[27]}](http://unlicense.org/)`
+  } else if (license===licenseArray[28]){
+    return `[${licenseArray[28]}](https://opensource.org/licenses/Zlib)`
+  } else {
+    return ""
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license===licenseArray[0]){
+    return `Read more about ${licenseArray[0]} here:`
+  } else if (license===licenseArray[1]){
+    return `Read more about ${licenseArray[1]} here:`
+  } else if (license===licenseArray[2]){
+    return `Read more about ${licenseArray[2]} here:`
+  } else if (license===licenseArray[3]){
+    return `Read more about ${licenseArray[3]} here:`
+  } else if (license===licenseArray[4]){
+    return `Read more about ${licenseArray[4]} here:`
+  } else if (license===licenseArray[5]){
+    return `Read more about ${licenseArray[5]} here:`
+  } else if (license===licenseArray[6]){
+    return `Read more about ${licenseArray[6]} here:`
+  } else if (license===licenseArray[7]){
+    return `Read more about ${licenseArray[7]} here:`
+  } else if (license===licenseArray[8]){
+    return `Read more about ${licenseArray[8]} here:`
+  } else if (license===licenseArray[9]){
+    return `Read more about ${licenseArray[9]} here:`
+  } else if (license===licenseArray[10]){
+    return `Read more about ${licenseArray[10]} here:`
+  } else if (license===licenseArray[11]){
+    return `Read more about ${licenseArray[11]} here:`
+  } else if (license===licenseArray[12]){
+    return `Read more about ${licenseArray[12]} here:`
+  } else if (license===licenseArray[13]){
+    return `Read more about ${licenseArray[13]} here:`
+  } else if (license===licenseArray[14]){
+    return `Read more about ${licenseArray[14]} here:`
+  } else if (license===licenseArray[15]){
+    return `Read more about ${licenseArray[15]} here:`
+  } else if (license===licenseArray[16]){
+    return `Read more about ${licenseArray[16]} here:`
+  } else if (license===licenseArray[17]){
+    return `Read more about ${licenseArray[17]} here:`
+  } else if (license===licenseArray[18]){
+    return `Read more about ${licenseArray[18]} here:`
+  } else if (license===licenseArray[19]){
+    return `Read more about ${licenseArray[19]} here:`
+  } else if (license===licenseArray[20]){
+    return `Read more about ${licenseArray[20]} here:`
+  } else if (license===licenseArray[21]){
+    return `Read more about ${licenseArray[21]} here:`
+  } else if (license===licenseArray[22]){
+    return `Read more about ${licenseArray[22]} here:`
+  } else if (license===licenseArray[23]){
+    return `Read more about ${licenseArray[23]} here:`
+  } else if (license===licenseArray[24]){
+    return `Read more about ${licenseArray[24]} here:`
+  } else if (license===licenseArray[25]){
+    return `Read more about ${licenseArray[25]} here:`
+  } else if (license===licenseArray[26]){
+    return `Read more about ${licenseArray[26]} here:`
+  } else if (license===licenseArray[27]){
+    return `Read more about ${licenseArray[27]} here:`
+  } else if (license===licenseArray[28]){
+    return `Read more about ${licenseArray[28]} here:`
+  } else {
+    return ""
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 
@@ -106,6 +230,8 @@ function generateMarkdown(data) {
 
 
   ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Badges
   ${renderLicenseBadge(data.license)}
